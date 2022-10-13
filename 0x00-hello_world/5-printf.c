@@ -1,12 +1,11 @@
 #include <stdio.h>
 
+
+/**
+ * Program to print a string using prinf
+ */
 int main(void)
 {
-	/*
-	 * function to output a text string using 
-	 * printf function.
-	 *
-	 */
 	printf("with proper grammar, but the outcome is a piece of art,");
 	return (0);
 }
