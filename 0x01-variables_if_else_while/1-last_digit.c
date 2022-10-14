@@ -4,7 +4,12 @@
 #include <string.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/*
+ *Description: main - start point
+ *
+ *Return 1 (FAILURE)
+ */
+
 int main(void)
 {
 	int n;
