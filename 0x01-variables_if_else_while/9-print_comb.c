@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *Description: main - start function
+ * main - start function
  *
- *Return 1 failure
+ * Return: 1 failure
  */
 
 int main(void)
@@ -13,9 +13,10 @@ int main(void)
 		putchar(i);
 		if (i <  9)
 		{
-			putchar(','); putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
