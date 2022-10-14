@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- *Main - Prints numbers from (0-9)
- *
- *Return (0) SUCCESS
+ * main - Entry point                                  *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
