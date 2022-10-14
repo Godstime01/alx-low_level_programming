@@ -1,30 +1,26 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
-#include <string.h>
-/* more headers goes there */
 
-/*
- *Description: main - start point
+/**
+ * main - Entry point
  *
- *Return 1 (FAILURE)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	int n;
-	char number[50];
-	int lastIndex = strlen(number) - 1;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	sprintf(number, "%d", n);
 
-	if (number[lastIndex] > 5)
-		printf("%d is greater than 5\n", n);
-	else if (number[lastIndex] == 0)
-		printf("%d is 0\n", n);
-	else if (number[lastIndex] < 6 && (number[lastIndex] != 0);
-			printf("%d is less than 6 and not 0\n", n);
+	if (n % 10 > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+	else if (n % 10 == 0)
+		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+	else
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+
 	return (0);
 }
