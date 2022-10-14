@@ -11,7 +11,7 @@
 int main(void)
 {
 	char lc, hc;
-	
+
 	for (lc = 'a'; lc <= 'z'; lc++)
 		putchar(lc);
 	for (hc = 'A'; hc <= 'Z'; hc++)
