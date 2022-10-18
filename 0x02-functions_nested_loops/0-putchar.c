@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
  * main - program to prints -_putchar
  * Return: 0 success
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar(text[i]);
+		_putchar(text[i]);
 	}
 	return (0);
 }
