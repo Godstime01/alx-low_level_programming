@@ -1,5 +1,5 @@
 #include <stdio.h>
-#ine "main.h"
+#include "main.h"
 /**
  * main - program to prints -_putchar
  * Return: 0 success
