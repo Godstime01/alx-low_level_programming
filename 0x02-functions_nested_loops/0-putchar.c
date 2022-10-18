@@ -7,12 +7,13 @@
 
 int main(void)
 {
-	char text[10] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n', '\0' };
+	char text[9] = "_putchar";
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(text[i]);
+		putchar(text[i]);
 	}
+	putchar('\n');
 	return (0);
 }
