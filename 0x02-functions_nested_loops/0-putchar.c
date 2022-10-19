@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
+ * main - Entry point
+ * Retu: 0 success 
  *
  */
 
