@@ -2,7 +2,7 @@
 
 /**
  * _puts - prints a string
- * @str: the string parameter
+ * @str: the string
  *
  * Return: the length of the string
  */
