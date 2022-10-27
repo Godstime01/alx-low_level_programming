@@ -9,7 +9,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int ld = strlen(d), ls = strlen(s), i = 0;
+	int ld = strlen(dest), ls = strlen(src), i = 0;
 
 	while (i < ls)
 	{
