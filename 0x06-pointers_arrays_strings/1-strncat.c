@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- **_strcat - adds both strings and return single string
- *@dest - return value
+ *_strncat - adds both strings and return single string
+ *@dest: return value
  *@src: string to be copied from
  *@n: number of char. to be copied
  *Return: @dest
@@ -14,10 +14,10 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int ls = 0, ld = 0, i = 0;
 
-	while (dest != '\0')
+	while (dest[ld] != '\0')
 		ld++;
 
-	while (src != '\n')
+	while (src[ld] != '\n')
 		ls++;
 
 	while (i < ls && i < n)
