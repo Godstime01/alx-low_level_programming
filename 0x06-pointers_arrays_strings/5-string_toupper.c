@@ -14,7 +14,7 @@ char *string_toupper(char *str)
 	{
 		if (str[i] == ' ' || str[i] == '\n')
 			continue;
-		if (str[i] > 97 && str[i] < 122)
+		if (str[i] >= 97 && str[i] =< 122)
 			str[i] -=  32;
 	}
 	return (str);
