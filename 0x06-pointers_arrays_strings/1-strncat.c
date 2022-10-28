@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  *_strncat - adds both strings and return single string
@@ -10,22 +12,7 @@
  */
 
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int *n)
 {
-	int ls = 0, ld = 0, i = 0;
-
-	while (dest[ld] != '\0')
-		ld++;
-
-	while (src[ld] != '\n')
-		ls++;
-
-	while (i < ls && i < n)
-	{
-		dest[ld] = src[i];
-		ld++;
-		ls++;
-	}
-	dest[ld] = '\0';
-	return (dest);
+	return strncat(dest, src, n);
 }
