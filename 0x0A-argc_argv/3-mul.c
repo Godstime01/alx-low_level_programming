@@ -10,6 +10,17 @@
 
 int main(int argc, char *argv[])
 {
-	(argc > 2) ? printf("%d\n", atoi(argv[1]) * atoi(argv[2])) : printf("Error\n");
-	return (0);
+	int s;
+
+	if (argc > 2)
+	{
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		s = 0;
+	}
+	else
+	{
+		printf("Error\n");
+		s = 1;
+	}
+	return (s);
 }
