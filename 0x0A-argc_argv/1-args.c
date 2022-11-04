@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
  * main - Entry point for the program
  * @argc: number of argument
@@ -6,7 +7,8 @@
  * Return: (0) - success
  */
 
-int main(argc, char *argv[])
+int main(int argc, __attribute__((unused))char *argv[])
 {
-	_putchar(argc);
+	printf("%d\n", argc);
+	return (0);
 }

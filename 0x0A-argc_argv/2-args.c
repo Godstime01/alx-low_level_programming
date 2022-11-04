@@ -1,24 +1,16 @@
-#include "main.h"
-#include <string.h>
+#include <stdio.h>
+
 /**
- *
- *
- *
+ * main - Entry point 
+ * @argc: no. of args
+ * @argv: arrays
+ * Return: 0
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i, j;
-
-	for (i = 0; i < strlen(argv); i++)
-	{
-		char s[] = argv[i];
-		int c = strlen(s[i]);
-		for(j = 0; j < c; j++)
-		{
-			_putchar(s[j]);
-		}
-		_putchar('\n');
-	}	
+	int i;
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 	return (0);
 }

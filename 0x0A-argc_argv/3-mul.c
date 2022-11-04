@@ -1,5 +1,5 @@
-#include "main.h"
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 /**
  * main - Entry point
@@ -8,22 +8,8 @@
  * Return: (0)
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int mul = 0;
-
-	if (strlen(argv) > 2)
-	{
-		mul = atoi(argv[1]) * atoi(argv[2]);
-		_putchar(mul);
-		_putchar('\n');
-	}
-	else{
-		char s[] = "Error";
-
-		while (s != '\0')
-			_putchar(s);
-		_putchar('\n');
-	}
+	(argc > 2) ? printf("%d\n", atoi(argv[1]) * atoi(argv[2])) : printf("Error\n");
 	return (0);
 }
