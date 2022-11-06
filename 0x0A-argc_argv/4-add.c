@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <ctype.h>
 
 /**
  * main - Entry point
@@ -12,35 +12,20 @@
 
 int main(int argc, char *argv[])
 {
-	int s, i, a, sum;
-
-	sum = 0;
-
-	if (argc <= 0)
-		printf("0\n");
+	int i, j, sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		a = *argv[i];
-		if (a >= 48 && a <= 57)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			sum += atoi(argv[i]);
-			if (i == argc - 1)
+			if (!isdigit(argv[i][j]))
 			{
-				printf("%d\n", sum);
-				s = 0;
-			}
-			else
-			{
-				continue;
+				printf("Error\n");
+				return (1);
 			}
 		}
-		else
-		{
-			printf("Error\n");
-			s = 1;
-			break;
-		}
+		sum += atoi(argv[i]);
 	}
-	return (s);
+	printf("%d\n", sum);
+	return (0);
 }
